@@ -4,3 +4,9 @@ bib: bib.c strutil.c strutil.h
 clean:
 	rm bib
 
+
+
+.PHONY: clean
+
+
+

@@ -7,9 +7,9 @@ int main(void) {
     char **t=NULL;
     size_t c=0;
 
-    char s[]="Goodbye|cruel|world|deds";
+    char *s="Goodbye|cruel|world|deds";
     char *d="|";
-    size_t n=-1;
+    size_t n=2;
 
     token_split(&t,&c,s,d,n);
 

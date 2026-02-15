@@ -13,9 +13,9 @@ int main(void) {
     ini_sget(config, "default", "port", "%d", &port);
 
     printf("host: %s\n",host);
-    printf("port: %d\n",port);
     printf("nick: %s\n",nick);
     printf("chan: %s\n",chan);
+    printf("port: %d\n",port);
 
     ini_free(config);
 

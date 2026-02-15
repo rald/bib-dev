@@ -1,5 +1,5 @@
-#include "ini.h"
-#include "dyad.h"
+#include <ini.h>
+#include <dyad.h>
 
 #include <stdio.h>
 #include <string.h>
@@ -7,13 +7,16 @@
 
 
 
+/* A simple IRC bot. Connects to an IRC network, joins a channel then sits
+ * idle, responding to the server's PING messges and printing everything the
+ * server sends it. */
+
 static char *host = "irc.dal.net";
 static char *nick = "frio";
 static char *chan = "#pantasya";
 static int   port = 6667;
  
 static int   isRegistered = 0;
-
 
 
 static void onConnect(dyad_Event *e) {
